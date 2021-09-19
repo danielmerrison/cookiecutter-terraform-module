@@ -7,5 +7,5 @@ variable "name" {
 variable "region" {
   type        = string
   description = "Default region used by the provider"
-  default     = {{ cookiecutter.aws_provider_region }}
+  default     = "{{ cookiecutter.aws_provider_region }}"
 }
