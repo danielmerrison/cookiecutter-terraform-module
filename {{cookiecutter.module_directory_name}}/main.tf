@@ -1,15 +1,11 @@
 terraform {
-  required_version = "~> 1"
+  required_version = "~> {{ cookiecutter.terraform_version }}"
   required_providers {
     aws = {
       version = "~> 3"
       source  = "hashicorp/aws"
     }
   }
-}
-
-provider "aws" {
-  region = var.region
 }
 
 module "example_internal_module" {

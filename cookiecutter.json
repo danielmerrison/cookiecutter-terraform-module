@@ -4,11 +4,10 @@
     "module_directory_name": "terraform-{{ cookiecutter.provider.lower() }}-{{ cookiecutter.module_name.lower().replace(' ', '-').replace('_', '-') }}",
     "module_description": "Creates the boiler plate projects structure and files for a Terraform module.",
     "terraform_version": [
-        "1.0",
+        "1",
         "0.15",
         "0.14",
         "0.13",
         "0.12"
-    ],
-    "aws_provider_region": "us-east-2"
+    ]
 }
